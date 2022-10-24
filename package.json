@@ -5,7 +5,10 @@
         "start": "nodemon ./src/server/index.ts",
         "test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 jest",
         "build": "webpack --mode=production --node-env=production",
-        "watch": "webpack --watch"
+        "watch": "webpack --watch",
+        "hermione": "hermione",
+        "hermione-start": "hermione --update-refs",
+        "hermione-gui": "npx hermione gui"
     },
     "dependencies": {
         "@babel/plugin-transform-runtime": "^7.19.6",
@@ -22,6 +25,7 @@
         "chai": "^4.3.4",
         "express": "^4.17.1",
         "faker": "^5.5.3",
+        "hermione": "^5.3.1",
         "immer": "^9.0.6",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
@@ -53,7 +57,7 @@
         "sass-loader": "^12.1.0",
         "style-loader": "^3.3.0",
         "ts-loader": "^9.2.6",
-        "ts-node": "^10.3.0",
+        "ts-node": "^10.9.0",
         "typescript": "^4.4.4",
         "webpack": "^5.58.2",
         "webpack-cli": "^4.9.0"
