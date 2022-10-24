@@ -5,7 +5,10 @@ describe('Страница доставки', async function() {
         await this.browser.url('http://localhost:3000/hw/store/delivery');
         await this.browser.assertView('plain', '.Application', {
             compositeImage: false,
-            allowViewportOverflow: true
+            allowViewportOverflow: true,
+            ignoreElements: [
+                '.nav-link:last-child'
+            ]
         });
     });
 });
